@@ -1,0 +1,71 @@
+#box{
+    width:40vw;
+    text-align: center;
+    background-color: powderblue;
+}
+
+button:hover{
+    background-color: darkgreen !important;
+}
+
+h2{
+    font-size: 10vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#innerbox{
+    text-align: center;
+}
+
+body{   
+    background-color: lightsteelblue !important;
+}
+
+.center { 
+    height: 40vh;
+    border: 1% solid black; 
+    border-radius: 10%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #btn1{
+      width: 25%;
+        margin-top: 2.5%;
+    }
+
+
+  label, input, button{
+    display: inline-block;
+    margin: 2.5%;
+    text-align: center;
+    }
+
+    label{
+        width: 20%;
+    }
+
+    @media only screen and (max-width: 800px) {
+        body{
+            overflow-wrap: break-word;
+        }
+        label,input {
+            display: block;
+            width: 80%;
+        }
+        input{
+            display: inline-block;
+        }
+        button{
+            width:50% !important;
+            margin-bottom: 10vh;
+            overflow-wrap: break-word;
+        }
+
+        #box{
+            height: auto;
+        }
+      }

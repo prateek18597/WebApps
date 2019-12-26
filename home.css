@@ -1,0 +1,133 @@
+#all{
+    display: flex;
+    flex-direction: column;
+}
+
+#nameDiv{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    text-transform: capitalize;
+    color: darkgreen;
+    font-weight: bolder;
+}
+body{
+    background-color: lemonchiffon;
+}
+#main{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60vh;
+    width: 100vw;
+    /* background-color: lemonchiffon; */
+}
+#submain{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60vh;
+    width: 90vw;  
+}
+.blank{
+    height: 10vh;
+    width: 100vw;
+}
+
+.blank1{
+    height: 60vh;
+    width: 5vw;
+}
+
+.boxContainer {
+    display: flex;
+    flex-direction: column;
+}
+.box {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.sub{
+    width: 20vw;
+    height: 30vh;
+    margin: 1%;
+    border-radius: 20%;
+    text-align: center;
+    /* background: linear-gradient(-45deg, lightgreen,white); */
+}
+
+#header{
+    height: 10vh;
+    background-color: lightskyblue;
+    width: 100vw;
+    text-align: left;
+    padding-left: 10%;
+    font-size: 8vh;
+}
+
+#footer{
+    height: 10vh;
+    width: 100vw;
+    background-color: lightskyblue;
+}
+
+@media only screen and (max-width:600px){
+    #all{
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        background-color: lemonchiffon;
+    }
+    #main{
+        text-align: center;
+        display: inline-block;
+        height: 400vh;
+        width: 100vw;
+    }
+    #submain{
+        text-align: center;
+        display: block;
+        height: 400vh;
+        width: 100vw;  
+    }
+    .blank{
+        /* display: none; */
+        height: 5vh;
+        width: 100vw;
+    }
+    
+    .blank1{
+        display: none;
+        height: 0vh;
+        width: 0vw;
+    }
+    
+    .sub{
+        width: 80vw;
+        height:45vh;
+        margin-left: 10%;
+        margin-top: 5%;
+        margin-bottom: 2.5%;
+        border-radius: 20%;
+        text-align: center;
+        background: linear-gradient(-45deg, lightgreen,white);
+    }
+    
+    #header{
+        height: 10vh;
+        background-color: lightskyblue;
+        width: 100vw;
+        text-align: center;
+        padding: 0%;
+    }
+    
+    #footer{
+        height: 10vh;
+        width: 100vw;
+        background-color: lightskyblue;
+    }
+}
